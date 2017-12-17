@@ -27,44 +27,27 @@
                             <th>评论</th>
                             <th>操作</th>
                         </tr>
-                        <tr>
+                            @foreach($data as $inputs)
+                            <tr>
                             <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
                             <td>
                                 <input name="ids[]" value="59" type="hidden">
                                 <input class="common-input sort-input" name="ord[]" value="0" type="text">
                             </td>
-                            <td>59</td>
-                            <td title="发哥经典"><a target="_blank" href="#" title="发哥经典">发哥经典</a> …
+                            <td>{{$inputs->id}}</td>
+                            <td title="发哥经典"><a target="_blank" href="#" title="发哥经典">{{$inputs->title}}</a> …
                             </td>
                             <td>0</td>
                             <td>2</td>
-                            <td>admin</td>
-                            <td>2014-03-15 21:11:01</td>
+                            <td>{{$inputs->author}}</td>
+                            <td>{{$inputs->created_at}}</td>
                             <td></td>
                             <td>
                                 <a class="link-update" href="#">修改</a>
                                 <a class="link-del" href="#">删除</a>
                             </td>
-                        </tr>
-                        <tr>
-                            <td class="tc"><input name="id[]" value="58" type="checkbox"></td>
-                            <td>
-                                <input name="ids[]" value="58" type="hidden">
-                                <input class="common-input sort-input" name="ord[]" value="0" type="text">
-                            </td>
-                            <td>58</td>
-                            <td title="黑色经典"><a target="_blank" href="#" title="黑色经典">黑色经典</a> …
-                            </td>
-                            <td>0</td>
-                            <td>35</td>
-                            <td>admin</td>
-                            <td>2013-12-30 22:34:00</td>
-                            <td></td>
-                            <td>
-                                <a class="link-update" href="#">修改</a>
-                                <a class="link-del" href="#">删除</a>
-                            </td>
-                        </tr>
+                            </tr>
+                            @endforeach
                     </table>
                     <div class="list-page"> 2 条 1/1 页</div>
                 </div>

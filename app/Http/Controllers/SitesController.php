@@ -17,11 +17,11 @@ class SitesController extends Controller
      */
     public function logout()
     {
+
             session_start();
-            echo "<script>alert('注销成功')</script>";
             unset($_SESSION['admin_name']);
             unset($_SESSION['pwd']);
-            return view('login');
+            echo "<script>alert('注销成功');window.location.href='login'</script>";
     }
 
     
@@ -115,13 +115,53 @@ class SitesController extends Controller
     }
     /**
      * Display the specified resource.
-     *
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    //后台评估动态展示
+    public function dync()
     {
-        //
+        $data = DB::table('evadync')->orderBy('created_at','desc')->get(['id','title','author','created_at']);
+        return view('admin.dync',compact('data'));
+    }
+    /**
+     * Display the specified resource.
+     * @return \Illuminate\Http\Response
+     */
+    //后台评估动态展示
+    public function poly()
+    {
+        $data = DB::table('evapoly')->orderBy('created_at','desc')->get(['id','title','author','created_at']);
+        return view('admin.poly',compact('data'));
+    }
+    /**
+     * Display the specified resource.
+     * @return \Illuminate\Http\Response
+     */
+    //后台评估动态展示
+    public function othe()
+    {
+        $data = DB::table('evaothe')->orderBy('created_at','desc')->get(['id','title','author','created_at']);
+        return view('admin.othe',compact('data'));
+    }
+    /**
+     * Display the specified resource.
+     * @return \Illuminate\Http\Response
+     */
+    //后台评估动态展示
+    public function poin()
+    {
+        $data = DB::table('evapoin')->orderBy('created_at','desc')->get(['id','title','author','created_at']);
+        return view('admin.poin',compact('data'));
+    }
+    /**
+     * Display the specified resource.
+     * @return \Illuminate\Http\Response
+     */
+    //后台评估动态展示
+    public function know()
+    {
+        $data = DB::table('evaknow')->orderBy('created_at','desc')->get(['id','title','author','created_at']);
+        return view('admin.know',compact('data'));
     }
 
     /**
@@ -165,7 +205,7 @@ class SitesController extends Controller
         //检索管理员账户密码
         $result=DB::table('user')->where('name',$username)->first();
         $pwd = $result->password;
-        //执行判断
+//        执行判断
         if($pwd==$password)
         {
             session_start();    //初始化session变量

@@ -24,18 +24,9 @@ Route::get('/admin',function(){
 Route::get('/insert', function(){
     return view('admin.insert');
 });
-Route::get('/dync', function(){
-    return view('admin.dync');
-});
-Route::get('/poly', function(){
-    return view('admin.poly');
-});
-Route::get('/othe', function(){
-    return view('admin.othe');
-});
-Route::get('/poin', function(){
-    return view('admin.poin');
-});
-Route::get('/know', function(){
-    return view('admin.know');
-});
+//后台展示路由
+Route::get('/dync','SitesController@dync');
+Route::get('/poly','SitesController@poly');
+Route::get('/othe','SitesController@othe');
+Route::get('/poin','SitesController@poin');
+Route::get('/know','SitesController@know');
