@@ -28,7 +28,6 @@
         </div>
         <div class="top-info-wrap">
             <ul class="top-info-list clearfix">
-                <li><a href="#">修改密码</a></li>
                 <li><a href="logout">退出</a></li>
             </ul>
         </div>
@@ -44,11 +43,11 @@
                 <li>
                     <a href=""><i class="icon-font">&#xe003;</i>常用操作</a>
                     <ul class="sub-menu">
-                        <li><a href="dync"><i class="icon-font">&#xe008;</i>评估动态</a></li>
-                        <li><a href="poly"><i class="icon-font">&#xe005;</i>评估政策</a></li>
-                        <li><a href="othe"><i class="icon-font">&#xe004;</i>他山之石</a></li>
-                        <li><a href="poin"><i class="icon-font">&#xe006;</i>评估要点</a></li>
-                        <li><a href="know"><i class="icon-font">&#xe006;</i>评估知识</a></li>
+                        <li><a href="show?rout=admin.dync&table=evadync"><i class="icon-font">&#xe008;</i>评估动态</a></li>
+                        <li><a href="show?rout=admin.poly&table=evapoly"><i class="icon-font">&#xe005;</i>评估政策</a></li>
+                        <li><a href="show?rout=admin.othe&table=evaothe"><i class="icon-font">&#xe004;</i>他山之石</a></li>
+                        <li><a href="show?rout=admin.poin&table=evapoin"><i class="icon-font">&#xe006;</i>评估要点</a></li>
+                        <li><a href="show?rout=admin.know&table=evaknow"><i class="icon-font">&#xe006;</i>评估知识</a></li>
                         
                     </ul>
                 </li>

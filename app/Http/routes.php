@@ -25,8 +25,5 @@ Route::get('/insert', function(){
     return view('admin.insert');
 });
 //后台展示路由
-Route::get('/dync','SitesController@dync');
-Route::get('/poly','SitesController@poly');
-Route::get('/othe','SitesController@othe');
-Route::get('/poin','SitesController@poin');
-Route::get('/know','SitesController@know');
+Route::get('/show','SitesController@show');
+Route::get('/destroy','SitesController@destroy');

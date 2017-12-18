@@ -93,6 +93,7 @@ class SitesController extends Controller
                 ]);
             }
         }
+        echo "<script>alert('上传成功');history.back()</script>";
     }
     
     /**
@@ -118,50 +119,12 @@ class SitesController extends Controller
      * @return \Illuminate\Http\Response
      */
     //后台评估动态展示
-    public function dync()
+    public function show(Request $request)
     {
-        $data = DB::table('evadync')->orderBy('created_at','desc')->get(['id','title','author','created_at']);
-        return view('admin.dync',compact('data'));
-    }
-    /**
-     * Display the specified resource.
-     * @return \Illuminate\Http\Response
-     */
-    //后台评估动态展示
-    public function poly()
-    {
-        $data = DB::table('evapoly')->orderBy('created_at','desc')->get(['id','title','author','created_at']);
-        return view('admin.poly',compact('data'));
-    }
-    /**
-     * Display the specified resource.
-     * @return \Illuminate\Http\Response
-     */
-    //后台评估动态展示
-    public function othe()
-    {
-        $data = DB::table('evaothe')->orderBy('created_at','desc')->get(['id','title','author','created_at']);
-        return view('admin.othe',compact('data'));
-    }
-    /**
-     * Display the specified resource.
-     * @return \Illuminate\Http\Response
-     */
-    //后台评估动态展示
-    public function poin()
-    {
-        $data = DB::table('evapoin')->orderBy('created_at','desc')->get(['id','title','author','created_at']);
-        return view('admin.poin',compact('data'));
-    }
-    /**
-     * Display the specified resource.
-     * @return \Illuminate\Http\Response
-     */
-    //后台评估动态展示
-    public function know()
-    {
-        $data = DB::table('evaknow')->orderBy('created_at','desc')->get(['id','title','author','created_at']);
-        return view('admin.know',compact('data'));
+        $rout = $request->input('rout');
+        $table = $request->input('table');
+        $data = DB::table($table)->orderBy('created_at','desc')->get(['id','title','author','created_at']);
+        return view($rout,compact('data'));
     }
 
     /**
@@ -193,10 +156,21 @@ class SitesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        $table = $request->input('table');
+        $id = $request->input('id');
+        $result = DB::table($table)->where('id',$id)->delete();
+        if ($result)
+        {
+            echo "<script>alert('删除成功！');history.back()</script>";
+        }else{
+            echo "<script>alert('删除失败，请稍后重试！');history.back()</script>";
+        }
     }
+
+
+    //登陆管理
     public function login(Request $request)
     {
         $data = $request->input();
