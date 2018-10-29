@@ -21,6 +21,7 @@ Route::get('/login', function(){
 
 Route::get('/see','ShowController@index');
 Route::get('/look','ShowController@show');
+Route::get('/submenushow', 'ShowController@submenushow');
 
 Route::post('/login', 'SitesController@login');   //登录
 Route::post('/store','SitesController@store');

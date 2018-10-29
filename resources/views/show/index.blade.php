@@ -1,112 +1,123 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2017/11/23
+ * Time: 8:58
+ */
+?>
+        <!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html>
-<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>教学工作评估宣传网</title>
-    {{--<link href="css/admin_login.css" rel="stylesheet" type="text/css" />--}}
-    <link href="css/admin_login.css" rel="stylesheet" type="text/css"/>
+    <title>大连海事大学废弃物再生工程技术研究中心</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-
-<div class="admin_input">
-    <input type="text">
-</div>
 <div class="container">
     <div class="header">
-        <img class="title-img" src="/images/title.png" alt="">
+        <div style="padding:30px 0;">
+            <img src="images/u27.png" alt="" style="width: 61px;">
+            <span>大连海事大学废弃物再生工程技术研究中心</span>
+        </div>
+        <img src="images/组拷贝2.png" alt="" style="width:100%;">
         <div class="header-btns">
             <ul>
                 <li>
-                    <a href="/index">网站首页</a>
+                    <a href="#">主页</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.dync&table=evadync">评估动态</a>
+                    <a href="submenushow?rout=show.researchDirection&table=researchDirection">研究方向</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.poly&table=evapoly">评估政策</a>
+                    <a href="VTMembermembers.php">团队成员</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.othe&table=evaothe">他山之石</a>
+                    <a href="scientificResearchProject.php">科研项目</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.know&table=evaknow">评建简报</a>
+                    <a href="academySuccesses.php">学术成果</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.poin&table=evapoin">评估要点</a>
+                    <a href="laboratoryEquipment.php">实验设备</a>
                 </li>
                 <li>
-                    <a href="http://www.sylu.edu.cn/sylusite/">返回官网</a>
+                    <a href="studentWorld.php">学生天地</a>
+                </li>
+                <li>
+                    <a href="contactWay.php">联系方式</a>
                 </li>
             </ul>
         </div>
+    </div>
     <div class="main">
         <div class="news">
             <div class="news-header">
-图片新闻
+                图片新闻
             </div>
             <div class="pic-news">
-                <img src="/images/1.jpg" id="newsPic" alt="" class="pic">
+                <img src="images/u48.jpg" id="newsPic" alt="" class="pic">
             </div>
             <div class="pic-select">
                 <div class="select-dot" style="background-color:white;"></div>
                 <div class="select-dot"></div>
                 <div class="select-dot"></div>
-                <div class="select-dot"></div>
             </div>
-            <a class="pic-info" href="detail_1.html" target="_blank" id="picTitle">我校召开本科教学工作审核评估校领导班子专题工作会</a>
+            <a class="pic-info" id="picTitle">图片新闻</a>
         </div>
-        <div class="recent">
-            <div class="rec-header">评估动态</div>
-            <div class="more"><a href="see?rout=show.dync&table=evadync">更多>></a></div>
-            <ul class="rec-list">
-<!--                --><?php
-//                $con=mysqli_connect('localhost','root','jwc24681711')or die("数据库连接失败");//连接数据库
-//                mysqli_set_charset( $con , "utf8" );//格式化字体
-//                mysqli_select_db($con,'jiaowuEva');//选择数据库
-//                $q="SELECT * FROM evaDync ORDER BY `evaDync`.`id` DESC LIMIT 7";//设置查询指令
-//                $res=mysqli_query($con,$q);//执行查询
-//                while($row=mysqli_fetch_assoc($res))//将result结果集中查询结果取出一条
-//                {
-//                    $id = $row['id'];
-//                    $date = date('Y-m-d',strtotime($row['created_at']));
-//                    echo "<li>"."<a href='look?table=evadync&id=$id'>".$row['title']."<span class='list-time'>".$date."</span>"."</a>"."</li>";
-//                }
-//                mysqli_close($con);
-//                ?>
-            </ul>
+        <div class="summary">
+            <div class="rec-header">中心简介</div>
+            <p>欢迎来到大连海事大学废弃物再生工程技术研究中心——李清波课题组，我们致力于研发工程技术措施，促使农业、工业和生产、生活废弃物得到再生，开发新技术使再生产品进入新产品生命周期中，促进废弃物化学元素的物质循环，并从中获取新的再生资源和能
+                源，减少二氧化碳排放，从而消除农业废弃物秸秆燃烧造成的大气污染物问题、实现市政污泥减量化和无害化处理、使废旧轮胎得到有效处置和再生利用，助力企业经济效益和社会效益双提升。</p>
         </div>
         <div class="recent recent2">
-            <div class="rec-header">评估政策</div>
-            <div class="more"><a href="see?rout=show.poly&table=evapoly">更多>></a></div>
+            <div class="rec-header">近期新闻</div>
+            <div class="more"><a href="policy.php">更多>></a></div>
             <ul class="rec-list">
-<!--                --><?php
-//                $con=mysqli_connect('localhost','root','jwc24681711')or die("数据库连接失败");//连接数据库
-//                mysqli_set_charset( $con , "utf8" );//格式化字体
-//                mysqli_select_db($con,'jiaowuEva');//选择数据库
-//                $q="SELECT * FROM evaPoly ORDER BY `evaPoly`.`id` DESC LIMIT 7";//设置查询指令
-//                $res=mysqli_query($con,$q);//执行查询
-//                while($row=mysqli_fetch_assoc($res))//将result结果集中查询结果取出一条
-//                {
-//                    $id = $row['id'];
-//                    $date = date('Y-m-d',strtotime($row['created_at']));
-//                    echo "<li>"."<a href='look?table=evapoly&id=$id'>".$row['title']."<span class='list-time'>".$date."</span>"."</a>"."</li>";
-//                }
-//                mysqli_close($con);
-//                ?>
+                <?php
+                $con=mysqli_connect('127.0.0.1','root','')or die("数据库连接失败");//连接数据库
+                mysqli_select_db($con,'recycling_project');//选择数据库
+                $q="SELECT * FROM recent_news ORDER BY `recent_news`.`id` DESC LIMIT 7";//设置查询指令
+                $res=mysqli_query($con,$q);//执行查询
+                while($row=mysqli_fetch_assoc($res))//将result结果集中查询结果取出一条
+                {
+                $id = $row['id'];
+                 $date = date('Y-m-d',strtotime($row['date']));
+                   echo "<li>"."<a href='policy_detail.php?id=$id'>".$row['title']."<span class='list-time'>".$date."</span>"."</a>"."</li>";
+                }
+                 mysqli_close($con);
+                ?>
             </ul>
+
         </div>
-        <div class="knowledge" style="background-color:white;"><a href="html/point.html"><img src="/images/point.png"></a></div>
+        <div class="knowledge" style="background-color:white;">
+            <span>合作单位</span>
+            <ul>
+                <li>
+                    <img src="images/u=1151928717,3547391191&fm=26&gp=0.jpg" alt="">
+                </li>
+                <li>
+                    <img src="images/562c11dfa9ec8a13bb1224f6fb03918fa0ecc098.jpg" alt="">
+                </li>
+                <li>
+                    <img src="images/u0.jpg" alt="">
+                </li>
+                <li>
+                    <img src="images/u=2557500812,1901937630&fm=26&gp=0.jpg" alt="">
+                </li>
+            </ul>
+            <img src="images/下载.jpg" alt="" style="width:45%;">
+            <img src="images/密苏里科技.jpg" alt="" style="width:20%;padding-left: 15%;padding-right: 10%">
+        </div>
         <div class="bottom">
-            <span>沈阳理工大学评建办公室</span>
-            <span>教务处琴理工作室&nbsp;承制</span>
-            <span>评建工作邮箱：pingjianban@sylu.edu.cn</span>
+            <span>版权所有：大连海事大学李清波课题组</span>
         </div>
-        </div>
-        </div>
+    </div>
+</div>
 <script>
     var dotList = document.getElementsByClassName('select-dot');
     newsPic = document.getElementById('newsPic');
@@ -114,23 +125,18 @@
     lengthOut = length = dotList.length;
     news = [
         {
-            picSrc: "/images/1.jpg",
-            title: "我校召开本科教学工作审核评估校领导班子专题工作会",
+            picSrc: "images/u44.png",
+            title: "图片新闻",
             href: "",
         },
         {
-            picSrc: "/images/2.jpg",
-            title: "我校召开教学单位本科教学工作审核评估工作推进会",
+            picSrc: "images/u46.jpg",
+            title: "图片新闻",
             href: "",
         },
         {
-            picSrc: "/images3.jpg",
-            title: "我校召开本科教学工作审核评估工作推进会",
-            href: "",
-        },
-        {
-            picSrc: "/images/4.jpg",
-            title: "经济管理学院召开本科审核评估和2017届学生就业工作专题会议",
+            picSrc: "images/u48.jpg",
+            title: "图片新闻",
             href: "",
         },
     ]

@@ -61,6 +61,14 @@ class ShowController extends Controller
         return view('show.connect',compact('data'));
     }
 
+    public function submenushow(Request $request)
+    {
+        $table = $request->input('table');
+        $data = DB::table($table)->orderBy('created_at','desc')->limit(1)->first();
+        #dd($data);
+        return view('show.connect',compact('data'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

@@ -5,38 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>教学工作评估宣传网</title>
+    <title>大连海事大学废弃物再生工程技术研究中心</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.media.js"></script>
-    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/index.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
 
 <body>
 <div class="container">
     <div class="header">
-        <img class="title-img" src="/images/title.png" alt="">
+        <div style="padding:30px 0;">
+            <img src="u27.png" alt="" style="width: 61px;">
+            <span>大连海事大学废弃物再生工程技术研究中心</span>
+        </div>
+        <img src="组拷贝2.png" alt="" style="width:100%;">
         <div class="header-btns">
             <ul>
                 <li>
-                    <a href="index">网站首页</a>
+                    <a href="index">主页</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.dync&table=evadync">评估动态</a>
+                    <a href="see?rout=show.researchDirection&table=researchDirection">研究方向</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.poly&table=evapoly">评估政策</a>
+                    <a href="see?rout=show.poly&table=evapoly">团队成员</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.othe&table=evaothe">他山之石</a>
+                    <a href="see?rout=show.othe&table=evaothe">科研项目</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.know&table=evaknow">评建简报</a>
+                    <a href="see?rout=show.know&table=evaknow">学术成果</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.poin&table=evapoin">评估要点</a>
+                    <a href="see?rout=show.poin&table=evapoin">实验设备</a>
                 </li>
                 <li>
-                    <a href="http://www.sylu.edu.cn/sylusite/">返回官网</a>
+                    <a href="http://www.sylu.edu.cn/sylusite/">学生天地</a>
+                </li>
+                <li>
+                    <a href="http://www.sylu.edu.cn/sylusite/">联系方式</a>
                 </li>
             </ul>
         </div>
@@ -46,12 +53,14 @@
             @yield('content')
         </div>
         <div class="bottom">
-            <span>沈阳理工大学评建办公室</span>
-            <span>教务处琴理工作室&nbsp;承制</span>
-            <span>评建工作邮箱：pingjianban@sylu.edu.cn</span>
+            <span>版权所有：大连海事大学李清波课题组</span>
         </div>
     </div>
 </div>
 </body>
+<body>
+<li>
 
+</li>
+</body>
 </html>

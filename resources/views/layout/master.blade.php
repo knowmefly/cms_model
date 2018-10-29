@@ -11,7 +11,7 @@
 
     ?>
     <meta charset="UTF-8">
-    <title>沈阳理工教学评估后台管理</title>
+    <title>大连海事大学废弃物再生工程技术研究中心</title>
     <link rel="stylesheet" type="text/css" href="css/common.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <script type="text/javascript" src="js/libs/modernizr.min.js"></script>
@@ -23,7 +23,7 @@
             <h1 class="topbar-logo none"><a href="index.html" class="navbar-brand">后台管理</a></h1>
             <ul class="navbar-list clearfix">
                 <li><a class="on" href="admin">首页</a></li>
-                <li><a href="/index" target="_blank">网站首页</a></li>
+                <li><a href="index" target="_blank">网站首页</a></li>
             </ul>
         </div>
         <div class="top-info-wrap">
@@ -43,12 +43,14 @@
                 <li>
                     <a href=""><i class="icon-font">&#xe003;</i>常用操作</a>
                     <ul class="sub-menu">
-                        <li><a href="show?rout=admin.dync&table=evadync"><i class="icon-font">&#xe008;</i>评估动态</a></li>
-                        <li><a href="show?rout=admin.poly&table=evapoly"><i class="icon-font">&#xe005;</i>评估政策</a></li>
-                        <li><a href="show?rout=admin.othe&table=evaothe"><i class="icon-font">&#xe004;</i>他山之石</a></li>
-                        <li><a href="show?rout=admin.poin&table=evapoin"><i class="icon-font">&#xe006;</i>评估要点</a></li>
-                        <li><a href="show?rout=admin.know&table=evaknow"><i class="icon-font">&#xe006;</i>评估简报</a></li>
-                        
+                        <li><a href="show?rout=admin.dync&table=evarese"><i class="icon-font">&#xe008;</i>研究方向</a></li>
+                        <li><a href="show?rout=admin.poly&table=evaVTme"><i class="icon-font">&#xe005;</i>团队成员</a></li>
+                        <li><a href="show?rout=admin.othe&table=evascie"><i class="icon-font">&#xe004;</i>科研项目</a></li>
+                        <li><a href="show?rout=admin.poin&table=evaacad"><i class="icon-font">&#xe006;</i>学术成果</a></li>
+                        <li><a href="show?rout=admin.know&table=evalabo"><i class="icon-font">&#xe006;</i>实验设备</a></li>
+                        <li><a href="show?rout=admin.revw&table=evastud"><i class="icon-font">&#xe006;</i>学生天地</a></li>
+                        <li><a href="show?rout=admin.revw&table=evacont"><i class="icon-font">&#xe006;</i>联系方式</a></li>
+                        <li><a href="show?rout=admin.revw&table=evanews"><i class="icon-font">&#xe006;</i>新闻</a></li>
                     </ul>
                 </li>
             </ul>
@@ -61,4 +63,7 @@
     <!--/main-->
 </div>
 </body>
+<script type="text/javascript">
+    var date = document.get
+</script>
 </html>
