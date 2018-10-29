@@ -25,25 +25,25 @@
                     <a href="index">主页</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.researchDirection&table=researchDirection">研究方向</a>
+                    <a href="submenushow?table=researchDirection">研究方向</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.poly&table=evapoly">团队成员</a>
+                    <a href="submenushow?table=VTMembermembers">团队成员</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.othe&table=evaothe">科研项目</a>
+                    <a href="submenushow?table=scientificResearchProject">科研项目</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.know&table=evaknow">学术成果</a>
+                    <a href="submenushow?table=academySuccesses">学术成果</a>
                 </li>
                 <li>
-                    <a href="see?rout=show.poin&table=evapoin">实验设备</a>
+                    <a href="submenushow?table=laboratoryEquipment">实验设备</a>
                 </li>
                 <li>
-                    <a href="http://www.sylu.edu.cn/sylusite/">学生天地</a>
+                    <a href="submenushow?table=studentWorld">学生天地</a>
                 </li>
                 <li>
-                    <a href="http://www.sylu.edu.cn/sylusite/">联系方式</a>
+                    <a href="submenushow?table=contactWay">联系方式</a>
                 </li>
             </ul>
         </div>

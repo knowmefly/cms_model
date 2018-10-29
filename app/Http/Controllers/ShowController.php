@@ -18,11 +18,12 @@ class ShowController extends Controller
      */
     public function index(Request $request)
     {
-        $rout = $request->input('rout');
-        $table = $request->input('table');
-        $data = DB::table($table)->orderBy('created_at','desc')->get();
+        #$rout = $request->input('rout');
+        #$table = $request->input('table');
+        $table = 'recent_news';
+        $data = DB::table($table)->orderBy('date','desc')->get();
 //        $data->created_at = new date('Y-m-d',strtotime($data->created_at));
-        return view($rout,compact('data'));
+        return view('show.news',compact('data'));
     }
 
     /**
@@ -65,8 +66,12 @@ class ShowController extends Controller
     {
         $table = $request->input('table');
         $data = DB::table($table)->orderBy('created_at','desc')->limit(1)->first();
-        #dd($data);
-        return view('show.connect',compact('data'));
+        if ($data==null){
+            echo "<script>alert('该页为空，请联系管理员上传');history.back()</script>";
+        }else{
+            return view('show.connect',compact('data'));
+        }
+
     }
 
     /**

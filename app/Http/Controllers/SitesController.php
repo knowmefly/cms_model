@@ -52,7 +52,7 @@ class SitesController extends Controller
                     'title'=>$data["title"],
                     'department'=>$data["department"],
                     'content'=>$data["content"],
-                    'created_at'=>date('Y-m-d H:i:s')
+                    'date'=>$data["date"]
                 ]);    
         }else{
             $res = $this->uploadFile($files);
@@ -66,7 +66,7 @@ class SitesController extends Controller
                         'department'=>$data["department"],
                         'content'=>$data["content"],
                         'pdf'=>$res[0]["finalPath"],
-                        'created_at'=>date('Y-m-d H:i:s')
+                        'date'=>$data["date"]
                     ]);
                 }else{
                     DB::table($data['colId'])
@@ -76,7 +76,7 @@ class SitesController extends Controller
                         'department'=>$data["department"],
                         'content'=>$data["content"],
                         'pic'=>$res[0]["finalPath"],
-                        'created_at'=>date('Y-m-d H:i:s')
+                        'date'=>$data["date"]
                     ]);
                 }
                 
@@ -89,7 +89,7 @@ class SitesController extends Controller
                     'content'=>$data["content"],
                     'pic'=>$res[0]["finalPath"],
                     'pdf'=>$res[1]["finalPath"],
-                    'created_at'=>date('Y-m-d H:i:s')
+                    'date'=>$data["date"]
                 ]);
             }
         }

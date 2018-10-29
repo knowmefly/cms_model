@@ -4,7 +4,7 @@
     <div class="main">
         <div class="article">
             <h3>{{$data->title}}</h3>
-            <span>{{$data->created_at}}&nbsp;&nbsp;&nbsp;&nbsp;{{$data->department}}</span><br>
+            <span>{{$data->date}}&nbsp;&nbsp;&nbsp;&nbsp;{{$data->department}}</span><br>
             <img src='{{$data->pic}}'>
             <br>
             {{$data->content}}<br>

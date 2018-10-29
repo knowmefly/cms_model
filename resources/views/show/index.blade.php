@@ -28,28 +28,28 @@
         <div class="header-btns">
             <ul>
                 <li>
-                    <a href="#">主页</a>
+                    <a href="index">主页</a>
                 </li>
                 <li>
-                    <a href="submenushow?rout=show.researchDirection&table=researchDirection">研究方向</a>
+                    <a href="submenushow?table=researchDirection">研究方向</a>
                 </li>
                 <li>
-                    <a href="VTMembermembers.php">团队成员</a>
+                    <a href="submenushow?table=VTMembermembers">团队成员</a>
                 </li>
                 <li>
-                    <a href="scientificResearchProject.php">科研项目</a>
+                    <a href="submenushow?table=scientificResearchProject">科研项目</a>
                 </li>
                 <li>
-                    <a href="academySuccesses.php">学术成果</a>
+                    <a href="submenushow?table=academySuccesses">学术成果</a>
                 </li>
                 <li>
-                    <a href="laboratoryEquipment.php">实验设备</a>
+                    <a href="submenushow?table=laboratoryEquipment">实验设备</a>
                 </li>
                 <li>
-                    <a href="studentWorld.php">学生天地</a>
+                    <a href="submenushow?table=studentWorld">学生天地</a>
                 </li>
                 <li>
-                    <a href="contactWay.php">联系方式</a>
+                    <a href="submenushow?table=contactWay">联系方式</a>
                 </li>
             </ul>
         </div>
@@ -76,18 +76,18 @@
         </div>
         <div class="recent recent2">
             <div class="rec-header">近期新闻</div>
-            <div class="more"><a href="policy.php">更多>></a></div>
+            <div class="more"><a href="see">更多>></a></div>
             <ul class="rec-list">
                 <?php
                 $con=mysqli_connect('127.0.0.1','root','')or die("数据库连接失败");//连接数据库
                 mysqli_select_db($con,'recycling_project');//选择数据库
-                $q="SELECT * FROM recent_news ORDER BY `recent_news`.`id` DESC LIMIT 7";//设置查询指令
+                $q="SELECT * FROM recent_news ORDER BY `recent_news`.`date` DESC LIMIT 7";//设置查询指令
                 $res=mysqli_query($con,$q);//执行查询
                 while($row=mysqli_fetch_assoc($res))//将result结果集中查询结果取出一条
                 {
                 $id = $row['id'];
                  $date = date('Y-m-d',strtotime($row['date']));
-                   echo "<li>"."<a href='policy_detail.php?id=$id'>".$row['title']."<span class='list-time'>".$date."</span>"."</a>"."</li>";
+                   echo "<li>"."<a href='look?table=recent_news&id=$id'>".$row['title']."<span class='list-time'>".$date."</span>"."</a>"."</li>";
                 }
                  mysqli_close($con);
                 ?>
