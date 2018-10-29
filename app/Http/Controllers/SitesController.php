@@ -109,7 +109,7 @@ class SitesController extends Controller
             $res[$i]['filename'] = date('Y-m-d-H-i-s') . '-' . uniqid() . '.' . $res[$i]['ext']; //设置文件名
 
             $res[$i]['bool'] = Storage::disk('uploads')->put($res[$i]['filename'], file_get_contents($res[$i]['realPath'])); //将文件存储到uploads
-            $res[$i]['finalPath'] = storage_path().'\app\uploads\\'.$res[$i]['filename'];
+            $res[$i]['finalPath'] = '/uploads/'.$res[$i]['filename'];
             $i++;
         }
         return $res;
@@ -123,7 +123,7 @@ class SitesController extends Controller
     {
         $rout = $request->input('rout');
         $table = $request->input('table');
-        $data = DB::table($table)->orderBy('created_at','desc')->get(['id','title','author','created_at']);
+        $data = DB::table($table)->orderBy('date','desc')->get(['id','title','author','date']);
         return view($rout,compact('data'));
     }
 

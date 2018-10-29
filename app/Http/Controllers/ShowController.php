@@ -59,6 +59,7 @@ class ShowController extends Controller
         $table = $request->input('table');
         $id = $request->input('id');
         $data = DB::table($table)->where('id',$id)->first();
+        #dd($data);
         return view('show.connect',compact('data'));
     }
 
