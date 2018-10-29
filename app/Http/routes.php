@@ -11,9 +11,16 @@
 |
 */
 
+
+Route::get('/index', function(){
+    return view('show.index');
+});
 Route::get('/login', function(){
     return view('login');
 });
+
+Route::get('/see','ShowController@index');
+Route::get('/look','ShowController@show');
 
 Route::post('/login', 'SitesController@login');   //登录
 Route::post('/store','SitesController@store');
@@ -21,6 +28,7 @@ Route::get('/logout','SitesController@logout');    //退出登录
 Route::get('/admin',function(){
     return view('admin.admin');
 });
+
 Route::get('/insert', function(){
     return view('admin.insert');
 });

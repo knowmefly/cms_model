@@ -29,7 +29,7 @@
                         </tr>
                         @foreach($data as $inputs)
                             <tr>
-                                <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                                {{--<td class="tc"><input name="id[]" value="59" type="checkbox"></td>--}}
                                 {{--<td>--}}
                                     {{--<input name="ids[]" value="59" type="hidden">--}}
                                     {{--<input class="common-input sort-input" name="ord[]" value="0" type="text">--}}

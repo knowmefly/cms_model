@@ -16,7 +16,7 @@
                                     <option value="evapoly">评估政策</option>
                                     <option value="evaothe">他山之石</option>
                                     <option value="evapoin">评估要点</option>
-                                    <option value="evaknow">评估知识</option>
+                                    <option value="evaknow">评估简报</option>
                                 </select>
                             </td>
                         </tr>

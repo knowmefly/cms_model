@@ -1,0 +1,233 @@
+body {
+    background-color: rgb(241, 229, 230);
+}
+.main {
+}
+.title-img {
+    width: 980px;
+}
+
+.container {
+    margin-top: -10px;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.header-btns {
+    height: 3em;
+    width: 100%;
+    background-color: rgb(82, 152, 175); 
+    margin-top: -6px;
+}
+.header-btns > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header-btns > ul > li {
+    display: inline-block;
+    width: 13.8%;
+    padding: 13px 0;
+    text-align: center;
+    font-size: 17px;
+}
+.header-btns > ul > li > a {
+    color: white;
+    font-weight:bold;
+}
+a {
+    text-decoration: none;
+}
+/* header */
+.news {
+    display: inline-block;
+    width: 44%;
+    margin: 0 3%;
+}
+
+.pic-news {
+    padding: 2%;
+    width: 96%;
+    background-color: rgb(82, 152, 175); 
+    height: 280px;
+}
+
+.pic-news > img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-header {
+    padding: 10px 0;
+    padding-left: 56px;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    width: 87%;
+    height: 20px;
+    margin-top: 20px;
+    background-color: rgb(82, 152, 175);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 2px solid white;
+}
+.pic-select {
+    height: 20px;
+    background-color:  rgb(82, 152, 175); 
+}
+.select-dot {
+    width: 11px;
+    height: 11px;
+    border: 3px solid white;
+    background-color: inherit;
+    float: right;
+    margin-right: 15px;
+}
+.pic-info {
+    display: block;
+    font-size: small;
+    height: 30px;
+    background-color:  rgb(82, 152, 175); 
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: white;
+    padding: 5px 5px;
+}
+.recent {
+    float: right;
+    width: 44%;
+    margin: 0 3%;
+    font-size: small;
+    background-color: rgb(82, 152, 175); 
+    margin-top: 20px;
+    border-radius: 7px;
+    height: 260px;
+    color: white;
+}
+.recent > span {
+    float: right;
+}
+.recent2 {
+    margin-top: -100px;
+}
+.knowledge {
+    display: inline-block;
+    width: 44%;
+    margin: 0 3%;
+    height: 140px;
+    background-color: gray;
+    padding: 2% 0;
+}
+.more {    
+    margin-left: 170px;
+    display: inline-block;
+}
+.more > a {
+    color: white;
+}
+.rec-header {
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    font-weight:bold;
+    color: white;
+    font-size: 17px;
+    width: 200px;
+    height: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 2px solid white;
+}
+.recent > ul {
+    list-style: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 5px 0;
+}
+.recent > ul > li > a {
+    color: white;
+}
+.rec-list > li {
+    margin: 8px 0;
+}
+.rec-title {
+    display: inline-block;
+    overflow: hidden;
+    width: 340px;
+}
+.rec-time {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.bottom {
+    height: 1em;
+    margin-top: 20px;
+    background-color: rgb(81, 81, 81);
+    text-align: center;
+    color: white;
+    padding: 1em;
+    font-size: 12px;
+}
+.bottom > span {
+    margin: 10px;
+}
+/* others */
+.link-btns {
+    display: inline-block;
+    width: 25%;
+    height: 65px;
+    padding: 4% 9%;
+    background-color: rgb(82, 152, 175); 
+    border-radius: 7px;
+    margin: 3%;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+.link-btns a{
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}
+.article {
+    margin: 20px;
+    padding: 1% 4%;
+    background-color: rgb(82, 152, 175); 
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+}
+.article > p {
+    text-align: left;
+}
+.article > span {
+    font-size: small;
+}
+
+.list {
+    margin: 20px;
+    padding: 1% 1%;
+    background-color: rgb(82, 152, 175); 
+    color: white;
+    border-radius: 7px;
+    min-height: 200px;
+}
+.list > ul {
+    margin-right: 20px;
+    list-style: none;
+    margin-left: 20px;
+    padding: 5px 0;
+}
+.list-ul > li {
+    margin: 5px;
+}
+.list-ul > li > a {
+    color: white;
+}
+
+.list-time {
+    float: right;
+}

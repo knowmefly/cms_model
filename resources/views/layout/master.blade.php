@@ -23,7 +23,7 @@
             <h1 class="topbar-logo none"><a href="index.html" class="navbar-brand">后台管理</a></h1>
             <ul class="navbar-list clearfix">
                 <li><a class="on" href="admin">首页</a></li>
-                <li><a href="http://218.25.35.27:8083/pinggu/" target="_blank">网站首页</a></li>
+                <li><a href="/index" target="_blank">网站首页</a></li>
             </ul>
         </div>
         <div class="top-info-wrap">
@@ -47,7 +47,7 @@
                         <li><a href="show?rout=admin.poly&table=evapoly"><i class="icon-font">&#xe005;</i>评估政策</a></li>
                         <li><a href="show?rout=admin.othe&table=evaothe"><i class="icon-font">&#xe004;</i>他山之石</a></li>
                         <li><a href="show?rout=admin.poin&table=evapoin"><i class="icon-font">&#xe006;</i>评估要点</a></li>
-                        <li><a href="show?rout=admin.know&table=evaknow"><i class="icon-font">&#xe006;</i>评估知识</a></li>
+                        <li><a href="show?rout=admin.know&table=evaknow"><i class="icon-font">&#xe006;</i>评估简报</a></li>
                         
                     </ul>
                 </li>
