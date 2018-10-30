@@ -10,6 +10,13 @@ use Illuminate\Support\Facades\DB;
 
 class ShowController extends Controller
 {
+
+
+    public function indexshow(){
+        $table = 'recent_news';
+        $data = DB::table($table)->orderBy('date','desc')->limit(7)->get();
+        return view('show.index',compact('data'));
+    }
     /**
      * Display a listing of the resource.
      *

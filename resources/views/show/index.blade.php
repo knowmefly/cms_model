@@ -78,19 +78,13 @@
             <div class="rec-header">近期新闻</div>
             <div class="more"><a href="see">更多>></a></div>
             <ul class="rec-list">
-                <?php
-                $con=mysqli_connect('127.0.0.1','root','')or die("数据库连接失败");//连接数据库
-                mysqli_select_db($con,'recycling_project');//选择数据库
-                $q="SELECT * FROM recent_news ORDER BY `recent_news`.`date` DESC LIMIT 7";//设置查询指令
-                $res=mysqli_query($con,$q);//执行查询
-                while($row=mysqli_fetch_assoc($res))//将result结果集中查询结果取出一条
-                {
-                $id = $row['id'];
-                 $date = date('Y-m-d',strtotime($row['date']));
-                   echo "<li>"."<a href='look?table=recent_news&id=$id'>".$row['title']."<span class='list-time'>".$date."</span>"."</a>"."</li>";
-                }
-                 mysqli_close($con);
-                ?>
+                <div class="list">
+                    <ul class="list-ul">
+                        @foreach($data as $inputs)
+                            <li><a href='look?table=recent_news&id={{$inputs->id}}'>{{$inputs->title}}<span class='list-time'>{{$inputs->date}}</span></a></li>
+                        @endforeach
+                    </ul>
+                </div>
             </ul>
 
         </div>

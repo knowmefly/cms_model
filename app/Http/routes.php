@@ -11,12 +11,10 @@
 |
 */
 
-Route::get('/', function (){
-    return view('welcome');
-});
-Route::get('/index', function(){
-    return view('show.index');
-});
+//首页
+Route::get('/','ShowController@indexshow');
+
+Route::get('/index','ShowController@indexshow');
 Route::get('/login', function(){
     return view('login');
 });
