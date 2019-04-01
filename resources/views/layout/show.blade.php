@@ -49,7 +49,7 @@
         </div>
     </div>
     <div class="main">
-        <div class="list">
+        <div class="list" style="background-color: rgba(0, 204, 153, 1);">
             @yield('content')
         </div>
         <div class="bottom">

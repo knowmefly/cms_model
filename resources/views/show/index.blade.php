@@ -78,13 +78,9 @@
             <div class="rec-header">近期新闻</div>
             <div class="more"><a href="see">更多>></a></div>
             <ul class="rec-list">
-                <div class="list">
-                    <ul class="list-ul">
                         @foreach($data as $inputs)
                             <li><a href='look?table=recent_news&id={{$inputs->id}}'>{{$inputs->title}}<span class='list-time'>{{$inputs->date}}</span></a></li>
                         @endforeach
-                    </ul>
-                </div>
             </ul>
 
         </div>

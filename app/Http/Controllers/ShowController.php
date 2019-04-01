@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 class ShowController extends Controller
 {
 
-
+    //首页展示
     public function indexshow(){
         $table = 'recent_news';
         $data = DB::table($table)->orderBy('date','desc')->limit(7)->get();
@@ -73,7 +73,7 @@ class ShowController extends Controller
     public function submenushow(Request $request)
     {
         $table = $request->input('table');
-        $data = DB::table($table)->orderBy('created_at','desc')->limit(1)->first();
+        $data = DB::table($table)->orderBy('id','desc')->limit(1)->first();
         if ($data==null){
             echo "<script>alert('该页为空，请联系管理员上传');history.back()</script>";
         }else{

@@ -27,7 +27,7 @@
             @endif
             <br>
             {{$data->content}}<br>
-            @if(!empty($data->pic))
+            @if(!empty($data->pdf))
                 <div class="media" style="background-color: rgb(255,255,255);width: 860px;align-content: center;"></div>
                 {{--<a class=\"media\" href='{{'http://118.89.245.83/cms_model/storage/app'.$data->pdf}}'></a>--}}
                 <iframe  src="{{'http://118.89.245.83/cms_model/storage/app'.$data->pdf}}" style="border: medium none;" width="800" height="610">

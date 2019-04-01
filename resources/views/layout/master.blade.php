@@ -38,11 +38,11 @@
         <div class="sidebar-title">
             <h1>菜单</h1>
         </div>
-        {{--<div class="sidebar-content">--}}
-            {{--<ul class="sidebar-list">--}}
-                {{--<li>--}}
-                    {{--<a href=""><i class="icon-font">&#xe003;</i>常用操作</a>--}}
-                    {{--<ul class="sub-menu">--}}
+        <div class="sidebar-content">
+            <ul class="sidebar-list">
+                <li>
+                    <a href=""><i class="icon-font">&#xe003;</i>常用操作</a>
+                    <ul class="sub-menu">
                         {{--<li><a href="show?rout=admin.dync&table=evarese"><i class="icon-font">&#xe008;</i>研究方向</a></li>--}}
                         {{--<li><a href="show?rout=admin.poly&table=evaVTme"><i class="icon-font">&#xe005;</i>团队成员</a></li>--}}
                         {{--<li><a href="show?rout=admin.othe&table=evascie"><i class="icon-font">&#xe004;</i>科研项目</a></li>--}}
@@ -50,11 +50,11 @@
                         {{--<li><a href="show?rout=admin.know&table=evalabo"><i class="icon-font">&#xe006;</i>实验设备</a></li>--}}
                         {{--<li><a href="show?rout=admin.revw&table=evastud"><i class="icon-font">&#xe006;</i>学生天地</a></li>--}}
                         {{--<li><a href="show?rout=admin.revw&table=evacont"><i class="icon-font">&#xe006;</i>联系方式</a></li>--}}
-                        {{--<li><a href="show?rout=admin.revw&table=evanews"><i class="icon-font">&#xe006;</i>新闻</a></li>--}}
-                    {{--</ul>--}}
-                {{--</li>--}}
-            {{--</ul>--}}
-        {{--</div>--}}
+                        <li><a href="show?rout=admin.news&table=recent_news"><i class="icon-font">&#xe006;</i>新闻</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
     <!--/sidebar-->
     <div class="main-wrap">

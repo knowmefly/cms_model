@@ -52,7 +52,8 @@ class SitesController extends Controller
                     'title'=>$data["title"],
                     'department'=>$data["department"],
                     'content'=>$data["content"],
-                    'date'=>$data["date"]
+                    'date'=>$data["date"],
+
                 ]);    
         }else{
             $res = $this->uploadFile($files);
@@ -123,7 +124,7 @@ class SitesController extends Controller
     {
         $rout = $request->input('rout');
         $table = $request->input('table');
-        $data = DB::table($table)->orderBy('date','desc')->get(['id','title','author','date']);
+        $data = DB::table($table)->orderBy('id','desc')->get(['id','title','author','date']);
         return view($rout,compact('data'));
     }
 
